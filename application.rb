@@ -48,6 +48,10 @@ class Package < Sequel::Model
   end
 end
 
+get '/' do
+  Package.order(:name).all.to_json
+end
+
 get '/packages' do
   Package.order(:name).all.to_json
 end
