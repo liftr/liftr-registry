@@ -1,13 +1,21 @@
-# Bower Server
+# Liftr Registry is a Bower Server
 
 ## Create package
 
-    curl http://twitter-nest.heroku.com/packages -v -F 'name=jquery' -F 'url=git://github.com/jquery/jquery.git'
+    curl http://liftr-registry.theblacksmithhq.com/packages -v -F 'name=jquery' -F 'url=git://github.com/jquery/jquery.git'
+
+or
+
+    liftr register jquery jquery/jquery
 
 ## Find package
 
-    curl http://twitter-nest.heroku.com/packages/jquery
+    curl http://liftr-registry.theblacksmithhq.com/packages/jquery
       {"name":"jquery","url":"git://github.com/jquery/jquery.git"}
+
+OR
+
+    liftr search jquery
 
 ## License
 
